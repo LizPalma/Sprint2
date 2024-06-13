@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*header*/
 .header{
     width: 100%;
     min-height: 15vh;
@@ -14,23 +14,46 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    padding: 25px 15px;
+    align-items: center;
 }
 .nav a{
+    width: 100%;
+    padding: 5px;
     color: beige;
     text-decoration: none;
+    border: 1px solid whitesmoke;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.nav a[href= "#"]{
+    background-color: whitesmoke;
+    color:rgb(112, 4, 105);
+}
+.nav a:hover{
+    background-color: rgb(243, 220, 241);
 }
 #logo{
     width: 40px;
     justify-content: end;
 }
+/*main home*/
 .main{
     width: 100%;
     min-height: 75vh;
     background-color: beige;
 }
+/*footer*/
 .footer{
     width: 100%;
     min-height: 10vh;
     background-color: rgb(112, 4, 105);
+}
+
+.footer p{
+    color: whitesmoke;
+    font-weight: bolder;
+    text-align: center;
+    padding: 25px;
+    
 }
