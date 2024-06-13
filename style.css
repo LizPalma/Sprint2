@@ -99,8 +99,37 @@
 .main_contact{
     width: 100%;
     height: 75vh;
+    padding-top: 20px;
 }
-
+.title_contact{
+    text-align: center;
+}
+.title_contact a{
+    text-decoration: none;
+    color: black;
+}
+.section_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.img_conos{
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+}
+.contact_pedido{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.contact_pedido a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
 /*main information*/
 .main_information{
     width: 100%;
@@ -114,6 +143,7 @@
 }
 .title_tips{
     text-align: center;
+    padding: 10px;
 }
 .tips{
     display: flex;
@@ -125,7 +155,7 @@
 .section_benefits{
     border: 1.5px solid black;
     margin: 20px;
-    
+    padding: 10px;
 }
 .tips ul{
     width: 50ch;
