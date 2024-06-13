@@ -110,8 +110,34 @@
 .main_benefits{
     width: 100%;
     height: 75vh;
+    padding: 25px 55px;
 }
-
+.title_tips{
+    text-align: center;
+}
+.tips{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+.section_benefits{
+    border: 1.5px solid black;
+    margin: 20px;
+    
+}
+.tips ul{
+    width: 50ch;
+    padding-left: 120px;
+}
+.tips_benef{
+    text-align: center;
+}
+.img_tips{
+    width: 100px;
+    height: 100px;
+}
 /*footer*/
 .footer{
     width: 100%;
