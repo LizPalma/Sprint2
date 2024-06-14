@@ -186,6 +186,20 @@ table{
     width: 100px;
     height: 100px;
 }
+
+/*Main Raffle*/
+.main_raffle{
+    width: 100%;
+    min-height: 75vh;
+    background-color: rgb(248, 248, 248);
+    text-align: center;
+    padding: 20px;
+}
+.section_raffle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 /*footer*/
 .footer{
     width: 100%;
