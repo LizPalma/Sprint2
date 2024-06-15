@@ -26,43 +26,73 @@
     
     </header>
     <main class="main_raffle">
+
         <h1> Raffle</h1>
         <h2>You can collaborate to hold an exhibition event an participate in a raffle to win an easel</h2>
-     <section class="section_raffle">
-        <form action="../show_data.html" method="get"></form>
-           
-            <label for="">
-                First Name
-                <input type="text" name="name" placeholder="Your name" required>
-            </label>
-            <label for="">
-                Last Name
-                <input type="text" name="last name" placeholder="Your last name" required>
-            </label>
 
-            <label for="">
-                Choose Meet or Zoom
-                <select name="" id=""></select>
-                <input type="text">
-            </label>
-            <label for="">
-                Choose Date 
-                <input type="date" name="" id="">
-            </label>
-            <label for="">
-                Menssage (Optional)
-                <textarea name="text" cols="25" rows="10" ></textarea>
-            </label>
-            <label for="">
-                <input type="radio" name="" id="">
-            </label>
-            <label for="">
-                I accept terms and conditions...
-                <input type="checkbox" name="" id="">
-            </label>
-            <input type="button" value="Send">
-     </section>   
+     <section class="section_raffle">
+
+        <form action="../show_data.html" method="get">
+            <div class="select">
+                <label for="">
+                    First Name
+                    <input type="text" name="name" placeholder="Your name" required>
+                </label>
+                <label for="">
+                    Last Name
+                    <input type="text" name="last name" placeholder="Your last name" required>
+                </label>
+
+                <label for="">
+                    Choose Meet or Zoom
+                    <select name=" select" id="">
+                        <option value="M">Meet</option>
+                        <option value="Z">Zoom</option>
+                    </select>
+                
+                </label>
+
+                <label for="">
+                    Choose Date 
+                    <input type="date" name="date" id="">
+                </label>
+
+                <label class="textarea">
+                    Menssage (Optional)
+                    <textarea name="text" cols="25" rows="10" placeholder="Your Menssage "></textarea>
+                </label>
+
+                <label for="">
+                    <input type="radio" name="radio" id="" required>
+                    Cahs
+                </label>
+                <label for="">
+                    <input type="radio" name="radio" id="" required>
+                    Credit Card
+                </label>
+                <label for="">
+                    <input type="radio" name="radio" id="" required>
+                    Debit Card
+                </label>
+                <label for="confirm">
+                    <input type="checkbox" name="confirm" value="I accept terms and conditions" required checked>
+                    <span class="label">
+                        I accept terms and conditions...
+                    </span>
+                </label>
+                <input class="button" type="button" value="Send">
+            </div>
         
+
+            
+        </form>
+
+        <div class="maps">
+
+            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15723.801047174567!2d-118.24853670038678!3d34.05613106745434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1718473889098!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    
     </main>
 
     <footer class="footer">
