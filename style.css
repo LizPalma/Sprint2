@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 h1{
-    font-size: 25px;
+    font-size: 24px;
 }
 h2{
     font-size: 20px;
@@ -18,19 +18,21 @@ h2{
 .navbar{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: space-between;
-    padding: 25px 15px;
+    padding: 15px;
     align-items: center;
 }
 .nav a{
-    width: 100%;
+    display: flex;
     padding: 5px;
+    margin: 5px;
     color: beige;
     text-decoration: none;
     border: 1px solid whitesmoke;
     border-radius: 50px;
     font-weight: bold;
+    font-size: 16px;
 }
 .nav a[href= "#"]{
     background-color: whitesmoke;
@@ -57,20 +59,22 @@ h2{
     padding-top: 10px;
 }
 .banner{
-    width: 70%;
-    height: 40vh;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     padding: 10px;
 }
 .section_article{
     display: flex;
-    justify-content: center;
+    flex-direction: column-reverse;
     align-items: center;
-    padding: 10px 35px;
+    padding: 10px;
 }
 .section_article p{
-    width: 100ch;
+    width: 30ch;
     text-align: center;
-    padding: 0 15px;
+    padding: 15px;
+    font-size: 18px;
 }
 .Img_art{
     width: 80px;
@@ -81,31 +85,35 @@ h2{
 .main_about{
     width: 100%;
     min-height: 75vh;
+    padding: 10px;
 }
 .title_about{
     text-align: center;
     padding-top: 10px ;
 }
 .img_foto{
-    width: 100px;
+    width: 90px;
+    height: 90px;
     border: 2.5px solid rgb(112, 4, 105);
 }
 
 .article_about{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding-top: 10px;
 }
 .article_about p{
-    padding: 20px;
-    width: 50ch;
+    padding: 10px;
+    width: 20ch;
+    font-size: 18px;
+    text-align: center;
 }
 /*main contact*/
 .main_contact{
     width: 100%;
-    height: 75vh;
-    padding-top: 20px;
+    min-height: 75vh;
+    padding: 10px;
 }
 .title_contact{
     text-align: center;
@@ -113,41 +121,51 @@ h2{
 .title_contact a{
     text-decoration: none;
     color: black;
+    font-size: 15px;
 }
 .section_contact{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 .img_conos{
-    width: 500px;
-    height: 300px;
-    padding: 20px;
+    width: 80%;
+    height: 170px;
+    object-fit: cover;
 }
 .contact_pedido{
     display: flex;
-    justify-content: space-evenly;
-    
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; 
+    gap: 10px;  
 }
 .contact_pedido a{
     text-decoration: none;
     color: black;
     font-weight: bold;
-    
+    font-size: 18px;
+}
+.txt_contact{
+    width: 30ch;
+    text-align: center;
+    padding-top: 15px;
 }
 /*main information*/
 .main_information{
     width: 100%;
-    height: 75vh;
-    padding: 30px;
+    min-height: 75vh;
+    padding: 10px;
 }
 .section_info{
     padding-bottom:25px ;
+    text-align: center;
 }
 table, tr, td, th{
     border: 1px solid black;
-    padding: 30px 35px;
+    padding: 10px 15px;
+    font-size: 18px;
 }
 table{
     text-align: center;
@@ -156,8 +174,8 @@ table{
 /*main benefits*/
 .main_benefits{
     width: 100%;
-    height: 75vh;
-    padding: 25px 55px;
+    min-height: 75vh;
+    padding: 20px ;
 }
 .title_tips{
     text-align: center;
@@ -165,26 +183,29 @@ table{
 }
 .tips{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     padding: 10px;
+    gap: 10px;
     
 }
 .section_benefits{
     border: 1.5px solid black;
-    margin: 20px;
-    padding: 10px;
+    margin: 20px 0;
+    
 }
 .tips ul{
-    width: 50ch;
-    padding-left: 120px;
+    width: 25ch;
+    font-size: 18px;
+    text-align: start;
 }
 .tips_benef{
     text-align: center;
 }
 .img_tips{
-    width: 100px;
+    width: 50%;
     height: 100px;
+    object-fit: cover;
 }
 
 /*Main Raffle*/
@@ -193,22 +214,24 @@ table{
     min-height: 75vh;
     background-color: rgb(248, 248, 248);
     text-align: center;
-    padding: 20px;
+    padding-bottom: 60px;
+    padding-top: 10px;
 }
 .section_raffle{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    padding: 25px;
+    padding: 10px;
+   
 }
 .select{
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 20px;
+    padding: 10px;
     gap: 10px;
     border: 1.5px solid black;
+    font-size: 17px;
 }
 .textarea{
     display: flex;
@@ -219,17 +242,20 @@ table{
     padding: 2.5px 5px;
 }
 .button{
-    width: 50px;
+    width: 40px;
 }
 .maps{
-    width: 300px;
-    height: 300px;
-    border-radius: 30px;
-    padding: 10px;
+    width: 90%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    
 }
 .location{
-    font-size: 20px;
+    font-size: 18px;
+    padding: 10px;
 }
+
 /*footer*/
 .footer{
     width: 100%;
@@ -242,5 +268,5 @@ table{
     font-weight: bolder;
     text-align: center;
     padding: 25px;
-    
+    font-size: 16px;
 }
