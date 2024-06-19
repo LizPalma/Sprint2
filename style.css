@@ -23,13 +23,13 @@ h2{
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
-    padding: 15px;
+    padding: 10px;
     align-items: center;
 }
 .nav a{
     text-align: justify;
     display: flex;
-    padding: 6px;
+    padding: 5px;
     margin: 5px;
     color: beige;
     text-decoration: none;
@@ -48,8 +48,10 @@ h2{
 }
 #logo{
     width: 40px;
-    justify-content: end;
+    justify-content: center;
+    filter: drop-shadow(2px 7px 21px #f6f5f6);
 }
+
 /*main home*/
 .main{
     width: 100%;
@@ -96,8 +98,8 @@ h2{
     padding-top: 10px ;
 }
 .img_foto{
-    width: 90px;
-    height: 90px;
+    width: 40%;
+    height: 100px;
     border: 2.5px solid rgb(112, 4, 105);
     object-fit: cover;
 }
@@ -197,7 +199,6 @@ table{
     align-items: center;
     padding: 10px;
     gap: 10px;
-    
 }
 .section_benefits{
     display: flex;
@@ -229,14 +230,13 @@ table{
     min-height: 75vh;
     background-color: rgb(248, 248, 248);
     text-align: center;
-    padding: 30px 5px 60px 5px;
+    padding: 30px 8px 60px 8px;
 }
 .section_raffle{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
-   
 }
 .select{
     display: flex;
@@ -262,8 +262,7 @@ table{
     width: 80%;
     height: 150px;
     object-fit: cover;
-    border-radius: 20px;
-    
+    border-radius: 20px; 
 }
 .location{
     font-size: 18px;
@@ -288,6 +287,7 @@ table{
 /*Media Queries */
 
 @media (min-width: 768px) {
+/*Home*/        
     .nav a{
         font-size: 18px;
     }
@@ -297,22 +297,26 @@ table{
         object-fit: cover;
         padding: 10px;
     }
-
+/*AboutUs*/    
     .img_foto{
-        width: 100px;
-        height: 100px;
+        width: 30%;
+        height: 130px;
     }
 
+/*Contact*/
+.img_conos{
+    height: 250px;
+}    
+/*More information*/
     .main_information{
         display: flex;
         flex-direction: column;
-        
     }
-
     table, tr, td, th{
         font-size: 18px;
     }
 
+/*Tips and benefits*/ 
     .main_benefits{
         padding: 35px;
     }
@@ -321,12 +325,13 @@ table{
         font-size: 18px;
         padding: 5px 15px ;
     }
-
     .img_tips{
-        width: 150px;
+        width: 30%;
         height: 150px;
         object-fit: cover;
     }
+
+/*raffle*/    
     .main_raffle{
         padding: 30px 20px 60px 20px;
     }
@@ -339,6 +344,7 @@ table{
 }
 
 @media (min-width: 1024px) {
+/*Home*/    
     .navbar{
         flex-direction: row;
     }
@@ -347,7 +353,7 @@ table{
         flex-direction: row;
     }
 
-
+/*AboutUs*/
     .section_article{
         flex-direction: row;
         justify-content: space-around;
@@ -362,7 +368,7 @@ table{
         height: 150px;
     }
 
-
+/*contact*/
     .title_contact a{
         font-size: 18px;
     }
@@ -380,13 +386,13 @@ table{
         width: 40ch;
     }
 
-
+/*More information*/
     table, tr, td, th{
         padding: 25px;
         font-size: 18px;
     }
 
-    
+/*Tips and benefits*/   
     .section_benefits{
         flex-direction: row;
         justify-content: space-around;
@@ -396,13 +402,12 @@ table{
         height: 150px;
     }
 
-
+/*raffle*/
     .section_raffle{
         flex-direction: row-reverse;
         justify-content: space-evenly;
         padding-top: 20px;
     }
-
     .maps{
         width: 300px;
         height: 200px;
