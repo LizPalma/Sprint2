@@ -12,6 +12,8 @@ h2{
 }
 /*header*/
 .header{
+    display: flex;
+    flex-direction: row;
     width: 100%;
     min-height: 15vh;
     background-color: rgb(112, 4, 105);
@@ -25,8 +27,9 @@ h2{
     align-items: center;
 }
 .nav a{
+    text-align: justify;
     display: flex;
-    padding: 5px;
+    padding: 6px;
     margin: 5px;
     color: beige;
     text-decoration: none;
@@ -96,6 +99,7 @@ h2{
     width: 90px;
     height: 90px;
     border: 2.5px solid rgb(112, 4, 105);
+    object-fit: cover;
 }
 
 .article_about{
@@ -281,6 +285,9 @@ table{
 /*Media Queries */
 
 @media (min-width: 768px) {
+    .nav a{
+        font-size: 18px;
+    }
     .banner{
         width: 100%;
         height: 300px;
@@ -325,5 +332,48 @@ table{
     }
     .maps{
         width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar{
+        flex-direction: row;
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .section_article{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .article_about{
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    .img_foto{
+        width: 180px;
+        height: 150px;
+    }
+
+
+    .title_contact a{
+        font-size: 18px;
+    }
+    .img_conos{
+        width: 70%;
+        height: 300px;
+    }
+    .contact_pedido{
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+    .txt_contact{
+        font-size: 18px;
+        width: 40ch;
     }
 }
